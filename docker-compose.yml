@@ -1,8 +1,8 @@
 web:
   image: debian:jessie
   volumes:
-    - ./web:/var/www/html
-  tty: true
+    - .:/var/www
+  # tty: true
 drupal:
   build: docker/drupal
   links:
