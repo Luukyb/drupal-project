@@ -14,6 +14,9 @@
         "drush/drush": "~8.0",
         "drupal/console": "~0.10"
     },
+    "require-dev": {
+        "phpunit/phpunit": "~4.8"
+    },
     "conflict": {
         "drupal/drupal": "*"
     },
@@ -28,10 +31,10 @@
     },
     "extra": {
         "installer-paths": {
-            "html/core": ["type:drupal-core"],
-            "html/modules/contrib/{$name}": ["type:drupal-module"],
-            "html/profiles/contrib/{$name}": ["type:drupal-profile"],
-            "html/themes/contrib/{$name}": ["type:drupal-theme"],
+            "web/core": ["type:drupal-core"],
+            "web/modules/contrib/{$name}": ["type:drupal-module"],
+            "web/profiles/contrib/{$name}": ["type:drupal-profile"],
+            "web/themes/contrib/{$name}": ["type:drupal-theme"],
             "drush/contrib/{$name}": ["type:drupal-drush"]
         }
     },
